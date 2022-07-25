@@ -1,0 +1,99 @@
+
+
+.home-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin:10% 200px ;
+}
+
+.text-green {
+    color: #27C498;
+}
+
+.text1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-white {
+    color: white;
+}
+
+.text2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.text-gray {
+    color: rgb(187, 186, 186);
+}
+
+.text3 {
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 800px;
+
+
+}
+.text4{
+    font-size: 16px;
+    font-weight: bold;
+    line-height:30px
+
+}
+.home-page-btns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 30px;
+}
+.home-social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin-top: 90px;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.social-links>div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: var(--bg-black1);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.text5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #c2c5c3;
+}
+@media only screen and (max-width: 850px){
+	.home-center {
+        margin: 12% 40px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .home-center{
+        margin: 30% 40px;
+    }
+    .text2{
+        font-size:50px
+    }
+}
+@media only screen and (max-width: 370px){
+    .home-center{
+        margin: 30% 20px;
+    }
+    .text2{
+        font-size:50px
+    }
+}

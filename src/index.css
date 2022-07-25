@@ -1,0 +1,98 @@
+:root{
+  --bg-black:#060706;
+  --bg-black1:#212423;
+  --bg-black2:#353636;
+  --fg-green:#27C498;
+  --fg-gray:#b7b5b5;
+  
+
+}
+body,html{
+  margin:0;
+  padding:0;
+  background-color: #060706;
+  overflow-x:hidden ;
+  font-family: Poppins, sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.btn{
+  background-color:var(--fg-green);
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:5px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+  display: inline-block !important;
+  /* display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; */
+}
+
+.btn-bordered{
+  background-color:transparent;
+  border:2px solid var(--fg-green);
+  color:var(--fg-green);
+  padding:10px 20px;
+  border-radius:5px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+  display: inline-block !important;
+
+}
+.btn-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background:var(--bg-black1);
+}
+
+::-webkit-scrollbar {
+  width: 7px
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--bg-black1);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 130%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--bg-black1) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

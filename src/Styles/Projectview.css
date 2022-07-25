@@ -1,0 +1,271 @@
+.pv-container {
+   max-width: 800px;
+    height: 500px;
+    position: relative;
+}
+
+.pv-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding: 30px 10px 20px 10px;
+    border-bottom: 2px solid rgb(99, 98, 98);
+}
+
+.pv-close-icon {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    cursor: pointer;
+
+}
+
+.pv-logo {
+    width: 60px;
+    height: 60px
+}
+
+.pv-logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+.pv-top-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.pv-name {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.pv-tag {
+    color: var(--fg-green);
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.pv-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 4px;
+    background-color: var(--bg-black2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pv-btns-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.btn-x {
+    background-color: var(--fg-green);
+}
+
+.pv-content {
+    padding: 20px;
+    height: 300px;
+    overflow-y: scroll;
+
+}
+
+.pv-description-title {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white
+}
+
+.pv-description-content {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(183, 181, 181);
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.pv-images {
+    margin-top: 15px;
+
+}
+
+.pv-images-content {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    width: 400px !important;
+    height: auto !important;
+    font-size: 18px;
+    background: #fff;
+
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pv-comment-avatar {
+    overflow: hidden;
+}
+
+.pv-comment-avatar-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.pv-comm1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pv-comment-name {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.pv-comment-date {
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pv-comment-text {
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.pv-add-comment-container {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--fg-green);
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+    opacity: 1;
+    z-index: 888;
+
+}
+.pv-comment-remove{
+
+   background-color: orange;
+   display: none;
+}
+
+.pv-add-comment-container1{
+    position: absolute;
+    bottom: 0px;
+    transition: 1s;
+    width: 100%;
+    background-color: orange;
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* display: none; */
+    z-index: 2;
+}
+.pv-add-comment-container2{
+    position: absolute;
+    bottom: 0px;
+    transition: 1s;
+    width: 100%;
+    background-color: gold;
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 2;
+}
+
+.pv-comment-input>input {
+    width: 600px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0px 20px;
+    outline: none;
+
+}
+
+.pv-comment-send {
+    margin-right: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.pv-comment-input>input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+}
+@media only screen and (max-width: 850px){
+    .pv-container {
+        width:100%;
+        height: 500px;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 470px){
+
+}
+@media only screen and (max-width: 370px){
+
+}
+@media only screen and (max-width: 550px){
+
+}
+@media only screen and (max-width: 1170px){
+
+}

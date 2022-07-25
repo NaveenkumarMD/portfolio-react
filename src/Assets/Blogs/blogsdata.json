@@ -1,0 +1,167 @@
+{
+    "blogsdata": [
+        {
+            "id": 1,
+            "name": "How to Dynamically Declare Variables Inside a Loop in Python",
+            "desc":"Methods to dynamically declare variables inside a loop in Python",
+            "likes": 23,
+            "reads": 12,
+            "file": "1.md",
+            "tag": "programming"
+        },
+        {
+            "id": 2,
+            "name": "How to get started with MERN stack?",
+            "desc":"Contents and materials for getting started with MERN stack",
+            "likes": 23,
+            "reads": 12,
+            "file": "2.md",
+            "tag": "javascript"
+        },
+        {
+            "id": 3,
+            "name": "Python — Different Ways of Getting User Inputs for Competitive Programming",
+            "desc":"Getting user inputs for competitive programming from user",
+            "likes": 23,
+            "reads": 12,
+            "file": "3.md",
+            "tag": "python"
+        },
+        {
+            "id": 4,
+            "name": "Working with 2D arrays in Python",
+            "desc":"An efficient way to work with 2D arrays in Python",
+            "likes": 23,
+            "reads": 12,
+            "file": "4.md",
+            "tag": "programming"
+        },
+        {
+            "id": 5,
+            "name": "How to Use ‘useReducer’ and ‘useContext’: React Hooks Tutorial",
+            "desc":"react hooks tutorial: useReducer and useContext",
+            "likes": 23,
+            "reads": 12,
+            "file": "5.md",
+            "tag": "javascript"
+        },
+        {
+            "id": 6,
+            "name": "How to Deploy a Webpage to Firebase",
+            "desc":"Deploying a webpage to firebase",
+            "likes": 23,
+            "reads": 12,
+            "file": "6.md",
+            "tag": "javascript"
+        },
+        {
+            "id": 7,
+            "name": "Do Python One-Liners Make Your Code Faster?",
+            "desc":"Comparison of one-liners with normal code in python",
+            "likes": 23,
+            "reads": 12,
+            "file": "7.md",
+            "tag": "python"
+        },
+        {
+            "id": 8,
+            "name": "Do you think success is better than failure?",
+            "desc":"A small writeup on success and failure",
+            "likes": 23,
+            "reads": 12,
+            "file": "8.md",
+            "tag": "miscellaneous"
+        },
+        {
+            "id": 9,
+            "name": "Express with TypeScript: Create a REST API",
+            "desc":"Creating a backend server application with express and typescript",
+            "likes": 23,
+            "reads": 12,
+            "file": "9.md",
+            "tag": "javascript"
+        },
+        {
+            "id": 10,
+            "name": "Creating a Trie Data Structure in Python (with Methods and Type Annotations)",
+            "desc":"Implementing Trie datastructure in python",
+            "likes": 23,
+            "reads": 12,
+            "file": "10.md",
+            "tag": "programming"
+        },
+        {
+            "id": 11,
+            "name": "Introduction to List Methods in Python",
+            "desc":"List methods in python",
+            "likes": 23,
+            "reads": 12,
+            "file": "11.md",
+            "tag": "programming"
+        },
+        {
+            "id": 12,
+            "name": "Express vs Flask: A Comparison of Speed",
+            "desc":"Comparison of express and flask",
+            "likes": 23,
+            "reads": 12,
+            "file": "12.md",
+            "tag": "javascript"
+        },
+        {
+            "id": 13,
+            "name": "Implementation of the 4 Pillars of OOP in Python and Java",
+            "desc":"Implementation of the 4 pillars of object oriented programming in python and java",
+            "likes": 23,
+            "reads": 12,
+            "file": "13.md",
+            "tag": "programming"
+        },
+        {
+            "id": 14,
+            "name": "How to Automate Tasks Using Python and GitHub Actions",
+            "desc":"Automating tasks using python and github actions and the sample codes",
+            "likes": 23,
+            "reads": 12,
+            "file": "14.md",
+            "tag": "python"
+        },
+        {
+            "id": 15,
+            "name": "Create a Chrome Extension to Manage Other Extensions",
+            "desc":"Creating a chrome exenstion with manifest 3 and the sample code",
+            "likes": 23,
+            "reads": 12,
+            "file": "15.md",
+            "tag": "javascript"
+        },
+        {
+            "id": 16,
+            "name": "How to use Python’s multiprocessing module to speed up your code",
+            "desc":"Using python’s multiprocessing module to speed up your code",
+            "likes": 23,
+            "reads": 12,
+            "file": "16.md",
+            "tag": "python"
+        },
+        {
+            "id": 17,
+            "name": "Dynamic Daily Quotes on GitHub Readme Using GitHub Actions and Python",
+            "desc":"Making your readme dynamic using github actions and python",
+            "likes": 23,
+            "reads": 12,
+            "file": "17.md",
+            "tag": "python"
+        },
+        {
+            "id": 18,
+            "name": "How to Pass Data Between Pages in react-router-dom V6?",
+            "desc":"Passing data between pages in react-router-dom v6",
+            "likes": 23,
+            "reads": 12,
+            "file": "18.md",
+            "tag": "javascript"
+        }
+
+    ]
+}

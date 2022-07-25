@@ -1,0 +1,298 @@
+{
+    "contents": [
+        {
+            "name": "MD meet",
+            "content": "A video meeting web app created using react and jetsi meet api",
+            "link": "https://mdmeet.web.app",
+            "github": "https://github.com/NaveenkumarMD/MD-meet",
+            "pic": "logo.svg",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
+        },
+        {
+            "name": "Cryptera - Symposium site",
+            "content": "A website for the technical symposium conducted by the CSE department of CIT",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/cryptera-website",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
+        },
+        {
+            "name": "Blind code",
+            "content": "A contest page to conduct a online coding contest without seeing the code",
+            "link": "https://blindcodecit.web.app/",
+            "github": "https://github.com/NaveenkumarMD/Blind-fold-contest-page",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
+        },
+        {
+            "name": "E-signer",
+            "content": "A prototype of a digital signature system",
+            "link": "",
+            "github": "https://github.com/NaveenkumarMD/Innovation-hackathon",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
+        },
+        {
+            "name": "Chrome custom home page",
+            "content": "A custom landing page for chrome",
+            "link": "https://github.com/NaveenkumarMD/browser-custom-pages",
+            "github": "https://github.com/NaveenkumarMD/browser-custom-pages",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"app"
+        },
+        {
+            "name": "Extension handler",
+            "content": "An extension for chrome to handle other extensions",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/Extension-handler",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"app"
+        },
+        {
+            "name": "Instagram clone",
+            "content": "Instagram cloned using mern stack",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/instagram-clone",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
+        },
+        {
+            "name": "Schedule and work",
+            "content": "A mobile application created using react-native to schedule and work",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/schedule-and-work",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"app"
+        },
+        {
+            "name": "Master methods",
+            "content": "A npm module which provides the necessary methods and functions to be used in other modules",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/Master-methods",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"module"
+        },
+        {
+            "name": "Link notes extension",
+            "content": "A chrome extension to store the links in a easier and organised way",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/Link-notes-extension",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"app"
+        },
+        {
+            "name": "Google classroom clone",
+            "content": "Google classroom clone with all the functionalities using MERN stack",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/Google-classroom-lcone-with-MERN",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
+        },
+        {
+            "name": "Create-mern-app",
+            "content": "A CLI module to bootstrap a mern app",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/create-mern-app",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"module"
+        },
+        {
+            "name": "Helper finder",
+            "content": "A website using MERN stack to find the houselhold helpers",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/krizen-hackathon",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
+        },
+        {
+            "name": "Chat app with react-native",
+            "content": "A realtime chat application created using react-native and firebase",
+            "link": "https://cryptera.web.app",
+            "github": "https://github.com/NaveenkumarMD/Chat-app-with-react-native",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"app"
+        }
+    ]
+}
