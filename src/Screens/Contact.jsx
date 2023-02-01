@@ -2,14 +2,13 @@ import React, { useEffect, useRef, useState } from 'react'
 import Navbar from '../Components/Navbar'
 import '../Styles/Contact.css'
 import { FiCircle } from "react-icons/fi";
-import { ButtonFilled } from '../Components/Button';
 import { RiWhatsappFill } from "react-icons/ri";
-import { FaLinkedinIn, FaExternalLinkSquareAlt } from "react-icons/fa";
-import { BsArrowUpRight, BsInstagram, BsMedium } from "react-icons/bs";
-import { app, db } from '../App'
-import { collection, doc, setDoc, addDoc, Timestamp } from 'firebase/firestore'
+import { FaLinkedinIn} from "react-icons/fa";
+import {  BsFillCircleFill, BsInstagram, BsMedium } from "react-icons/bs";
+import {  db } from '../App'
+import { collection,addDoc } from 'firebase/firestore'
 import Mymodal from '../Components/Mymodal'
-import { BallTriangle, Bars } from 'react-loader-spinner'
+import {  Bars } from 'react-loader-spinner'
 const emailRegex = RegExp(
     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 );
@@ -308,7 +307,8 @@ const Likedtag = ({ title, likedarr, changelikedarr }) => {
                 setIsLiked(!isLiked)
             }}
         >
-            <FiCircle size={15} />
+            <FiCircle  size={15} />
+
             <div>
                 {title}
             </div>

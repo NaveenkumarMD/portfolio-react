@@ -4,7 +4,8 @@ import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import '../Styles/Blogs.css'
 import Blogsdata from '../Assets/Blogs/blogsdata.json'
-import { MdMiscellaneousServices } from 'react-icons/md'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Blogs() {
     const [selectedtag,setSelectedtag]=useState('all')
     const blogcontainerref=useRef(null)
@@ -21,6 +22,9 @@ function Blogs() {
         programminglinkref.current.style.backgroundColor=""
         miscellaneouslinkref.current.style.backgroundColor=""
     }
+    useEffect(()=>{
+        AOS.init()
+    })
     useEffect(()=>{
         console.log(Blogsdata)
        setBlogs(Blogsdata.blogsdata)
@@ -59,7 +63,7 @@ function Blogs() {
                         {
                            blogs && blogs.map((blog,index)=>{
                                 if(selectedtag==='all'||blog.tag===selectedtag){
-                                    return <Blogcontainer key={index} blog={blog}/>
+                                    return <Blogcontainer data-aos="zoom-out" key={index} blog={blog}/>
                                 }
                             })
                         }
@@ -68,7 +72,7 @@ function Blogs() {
                     
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

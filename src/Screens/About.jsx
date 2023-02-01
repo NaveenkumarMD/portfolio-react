@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import '../Styles/About.css'
@@ -11,12 +11,13 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Typography from '@mui/material/Typography';
 function About() {
+    useEffect(()=>{
+        AOS.init()
+    },[])
     return (
         <div >
             <Navbar />
@@ -65,13 +66,14 @@ function About() {
             <div className='education'>
                 <Timeline position="alternate">
 
-                    <TimelineItem>
+                    <TimelineItem >
                         <TimelineOppositeContent
                             sx={{ m: "auto 0" }}
                             align="right"
                             variant="body2"
                             color="gray"
                             className='event-date'
+                            data-aos="fade-left"
                         >
 
                             <Typography className="text9">Paramveer matric Higher Secondary school
@@ -81,7 +83,7 @@ function About() {
                             <Typography className="text9">Papparapatti-636809</Typography>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
-                            <TimelineConnector sx={{ bgcolor: "var(--fg-green)" }} />
+                            <TimelineConnector data-aos="fade-right" sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot sx={{
                                 bgcolor:"var(--fg-green)",
                                 width:"10px",
@@ -92,7 +94,10 @@ function About() {
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent sx={{ py: "50px", px: 2, fw: "900" }}>
+                        <TimelineContent
+                                                    
+                                                    data-aos="fade-right"
+                        sx={{ py: "50px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 HIGH SCHOOL
                             </Typography>
@@ -108,6 +113,8 @@ function About() {
                             variant="body2"
                             color="gray"
                             className='event-date'
+                            data-aos="fade-right"
+                            
                         >
 
                             <Typography className="text9">Paramveer matric Higher Secondary school
@@ -117,7 +124,8 @@ function About() {
                             <Typography className="text9">Papparapatti-636809</Typography>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
-                            <TimelineConnector sx={{ bgcolor: "var(--fg-green)" }}  />
+                            <TimelineConnector
+                            data-aos="fade-left" sx={{ bgcolor: "var(--fg-green)" }}  />
                             <TimelineDot sx={{
                                 bgcolor:"var(--fg-gray)",
                                 width:"10px",
@@ -126,7 +134,7 @@ function About() {
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent sx={{ py: "40px", px: 2, fw: "900" }}>
+                        <TimelineContent data-aos="fade-right" sx={{ py: "40px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 HIGHER SECONDARY
                             </Typography>
@@ -143,6 +151,7 @@ function About() {
                             variant="body2"
                             color="gray"
                             className='event-date'
+                            data-aos="fade-left"
                         >
 
                             <Typography className="text9">Coimbatore Institute of Technology
@@ -152,7 +161,9 @@ function About() {
                             <Typography className="text9">Coimbatore-641014</Typography>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
-                            <TimelineConnector sx={{ bgcolor: "var(--fg-green)" }} />
+                            <TimelineConnector
+                            data-aos="fade-right"
+                            sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot
 sx={{
     bgcolor:"var(--fg-green)",
@@ -164,7 +175,9 @@ sx={{
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent sx={{ py: "40px", px: 2, fw: "900" }}>
+                        <TimelineContent
+                        data-aos="fade-right"
+                        sx={{ py: "40px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 UNDER GRADUATE
                             </Typography>
@@ -180,24 +193,33 @@ sx={{
                             variant="body2"
                             color="gray"
                             className='event-date'
+                            data-aos="fade-right"
                         >
 
                             <Typography className="text9">Koyo software Solutions
 
                             </Typography>
-
+                         
+                            <Typography className='text9'>
+                                Remote
+                            </Typography>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
-                            <TimelineConnector sx={{ bgcolor: "var(--fg-green)" }} />
+                            <TimelineConnector
+                            data-aos="fade-left"
+                            sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot sx={{
                                 bgcolor:"var(--fg-gray)",
                                 width:"10px",
                                 height:"10px"
+
                             }}>
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent sx={{ py: "40px", px: 2, fw: "900" }}>
+                        <TimelineContent
+                        data-aos="fade-left"
+                        sx={{ py: "40px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 INTERN
                             </Typography>
@@ -207,6 +229,7 @@ sx={{
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent
+                        data-aos="fade-right"
                             sx={{ m: "auto 0" }}
                             align="right"
                             variant="body2"
@@ -218,9 +241,15 @@ sx={{
 
                             </Typography>
 
+                            <Typography className='text9'>
+                                Remote
+                            </Typography>
+
                         </TimelineOppositeContent>
                         <TimelineSeparator >
-                            <TimelineConnector sx={{ bgcolor: "var(--fg-green)" }} />
+                            <TimelineConnector
+                            data-aos="fade-right"
+                            sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot
 sx={{
     bgcolor:"var(--fg-green)",
@@ -232,7 +261,9 @@ sx={{
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent sx={{ py: "40px", px: 2, fw: "900" }}>
+                        <TimelineContent
+                        data-aos="fade-right"
+                        sx={{ py: "40px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 INTERN
                             </Typography>
@@ -240,6 +271,48 @@ sx={{
                             <Typography className='year'>Duration: Feb,2022 to Mar,2022</Typography>
                         </TimelineContent>
                     </TimelineItem>
+                    <TimelineItem>
+                    <TimelineOppositeContent
+                            sx={{ m: "auto 0" }}
+                            align="right"
+                            variant="body2"
+                            color="gray"
+                            className='event-date'
+                            data-aos="fade-right"
+                        >
+
+                            <Typography className="text9">Striim Engineering services
+
+                            </Typography>
+                            <Typography className='text9'>
+                                Chennai
+                            </Typography>
+
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                            <TimelineConnector
+                            data-aos="fade-left"
+                            sx={{ bgcolor: "var(--fg-green)" }} />
+                            <TimelineDot sx={{
+                                bgcolor:"var(--fg-gray)",
+                                width:"10px",
+                                height:"10px"
+
+                            }}>
+                            </TimelineDot>
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent
+                        data-aos="fade-left"
+                        sx={{ py: "40px", px: 2, fw: "900" }}>
+                            <Typography className="event_name" component="span">
+                                INTERN
+                            </Typography>
+                            <Typography className='marks'>Frontend developer</Typography>
+                            <Typography className='year'>Currently working</Typography>
+                        </TimelineContent>
+                    </TimelineItem>
+
 
                 
                 </Timeline>

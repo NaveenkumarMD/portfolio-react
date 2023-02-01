@@ -6,6 +6,10 @@
     justify-content: center;
     color: white;
     margin:10% 200px ;
+    
+}
+.home-container{
+    min-height: 100vh !important;
 }
 
 .text-green {

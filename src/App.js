@@ -7,7 +7,6 @@ import Contact from "./Screens/Contact";
 import Home from './Screens/Home'
 import Projects from "./Screens/Projects";
 import Resume from "./Screens/Resume";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore'
 import AnimatedCursor from 'react-animated-cursor'

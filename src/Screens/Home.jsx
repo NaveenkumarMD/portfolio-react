@@ -1,22 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ButtonBordered, ButtonFilled } from '../Components/Button'
 import Navbar from '../Components/Navbar'
 import '../Styles/Home.css'
-import { BsArrowUpRight, BsInstagram, BsMedium } from "react-icons/bs";
+import { BsArrowUpRight, BsMedium } from "react-icons/bs";
 import { MdWorkOutline } from "react-icons/md";
 import {RiWhatsappFill} from 'react-icons/ri'
-
-import { FaLinkedinIn, FaExternalLinkSquareAlt } from "react-icons/fa";
-import About from './About';
+import { FaLinkedinIn } from "react-icons/fa";
 import Footer from '../Components/Footer';
 import { useNavigate } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Home() {
     const navigate=useNavigate()
+    useEffect(()=>{
+        AOS.init()
+    },[])
     return (
         <div className='home-container'>
             <Navbar />
-            <div className='home-center'>
-                <div className='text-green text1'>Hey dude! ✌️</div>
+            <div className='home-center' data-aos="fade-right" aos-duration="1000p">
+                <div className='text-green text1' >Hey dude! ✌️</div>
                 <div className='text-white text2' style={{ marginTop: "6px" }}>I'm Naveenkumar M</div>
                 <div className='text-gray text4' style={{ marginTop: "15px" }}>Full stack developer | Blogger | Tech enthusiast</div>
                 <div className='home-page-btns'>
@@ -47,9 +50,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                {/* <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_v2eltxwm.json"  background="transparent"  speed="1"  style={{width: "300px", height: "300px"}}  loop autoplay></lottie-player> */}
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
