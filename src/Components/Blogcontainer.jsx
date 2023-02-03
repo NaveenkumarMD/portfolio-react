@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { RiHeartFill } from "react-icons/ri";
 import { GiRead } from "react-icons/gi";
 import { useNavigate } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Blogcontainer({ blog }) {
     const naviagate=useNavigate()
     const handleopen=()=>{
         naviagate(`/blogs/${blog.id}/${blog.name}`)
     }
+    useEffect(()=>{
+        AOS.init()
+    },[])
     return (
-        <div className='blog-container' onClick={handleopen}>
+        <div className='blog-container' data-aos="zoom-in" onClick={handleopen}>
             <div className='blog-tag'>{blog.tag}</div>
             <div className='blog-title'>{blog.name}</div>
             <div className='blog-desc'>

@@ -5,10 +5,9 @@ import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 import '../Styles/Projects.css'
 import { FaAndroid, FaGlobe, FaExternalLinkAlt,FaGithubAlt } from "react-icons/fa";
 import { SiNpm } from "react-icons/si";
-
 function Projectcontainer({data,openprojectviewmodal}) {
     return (
-        <div onClick={()=>openprojectviewmodal(data)}>
+        <div onClick={()=>openprojectviewmodal(data)}data-aos="zoom-in">
             <div className='blog-container'>
                 <div className='blog-title'>{data.name}</div>
                 <div className='p-desc'>

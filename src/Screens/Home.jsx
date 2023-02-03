@@ -6,7 +6,6 @@ import { BsArrowUpRight, BsMedium } from "react-icons/bs";
 import { MdWorkOutline } from "react-icons/md";
 import {RiWhatsappFill} from 'react-icons/ri'
 import { FaLinkedinIn } from "react-icons/fa";
-import Footer from '../Components/Footer';
 import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -31,7 +30,7 @@ function Home() {
                     </ButtonBordered>
                 </div>
                 <div className='home-social-icons'>
-                    <div className='text5'>
+                    <div className='text5' style={{fontWeight:300}}>
                         Check out my
                     </div>
                     <div className='social-links'>

@@ -24,7 +24,7 @@ function About() {
 
             <div className='a-content1'>
                 <div className='image-container'>
-                    <img src={require("../Assets/pic.jpg")} alt="pic" />
+                    <img alt="Naveenkumar M" src={require("../Assets/pic.jpg")}  />
                 </div>
                 <div className='a-content'>
                     <div className='text5'>

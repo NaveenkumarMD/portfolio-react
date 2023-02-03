@@ -66,7 +66,7 @@ function Navmobile() {
         <div className='mobile-nav'>
             <div className='mob-nav'>
                 <div className='mob-nav-left'>
-                    <img src={logo} />
+                    <img src={logo} alt="Naveenkumar M" />
                 </div>
                 <div className='mob-nav-right' onClick={toggleSidebar}>
                     {
@@ -82,7 +82,7 @@ function Navmobile() {
             </div>
             <div className="sidebar" ref={sidebaref}>
                 <div className='logo-mob'>
-                    <img src={logo} />
+                    <img src={logo} alt="Naveenkumar M" />
                 </div>
                 <div>
                     <div className='mob-nav-links'>

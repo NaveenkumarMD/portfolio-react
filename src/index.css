@@ -66,6 +66,10 @@ body,html{
   display: inline-block;
   border-bottom: 1px dotted black;
 }
+.tooltip:hover{
+  transform: scale(130%);
+  transition: 0.2s;
+}
 
 .tooltip .tooltiptext {
   visibility: hidden;

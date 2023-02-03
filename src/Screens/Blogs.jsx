@@ -50,20 +50,20 @@ function Blogs() {
         <div className='blogs'>
             <Navbar />
             <div className='blogs-container'>
-                <div className='title-blog text-white'>blogs</div>
+                <div className='title-blog text-white' data-aos="fade-down">blogs</div>
                 <div className='blogs-content'>
-                    <div className="blogs-menu">
+                    <div className="blogs-menu" data-aos="fade-right">
                         <div ref={allinkref} onClick={()=>setSelectedtag("all")}>all</div>
                         <div ref={javascriptlinkref} onClick={()=>setSelectedtag("javascript")}>javascript</div>
                         <div ref={pythonlinkref} onClick={()=>setSelectedtag("python")}>python</div>
                         <div ref={programminglinkref} onClick={()=>setSelectedtag("programming")}>programming</div>
                         <div ref={miscellaneouslinkref} onClick={()=>setSelectedtag("miscellaneous")}>miscellaneous</div>
                     </div>
-                    <div className='blogs-flex'>
+                    <div className='blogs-flex' >
                         {
                            blogs && blogs.map((blog,index)=>{
                                 if(selectedtag==='all'||blog.tag===selectedtag){
-                                    return <Blogcontainer data-aos="zoom-out" key={index} blog={blog}/>
+                                    return <Blogcontainer  key={index} blog={blog}/>
                                 }
                             })
                         }

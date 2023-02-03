@@ -82,7 +82,7 @@ function Projectview({ isopen, setisopen, data }) {
                                         {
 
                                         }
-                                        <img src="" />
+                                        <img src="" alt="Naveenkumar M" />
                                     </div>
                                     <div className='pv-header'>
                                         <div className='pv-name'>{ }</div>
@@ -151,19 +151,19 @@ function Projectview({ isopen, setisopen, data }) {
                                             className="mySwiper"
                                         >
                                             <SwiperSlide>
-                                                <img src={require("../Assets/Projects/Default/one.jpg")} />
+                                                <img alt="Naveenkumar M" src={require("../Assets/Projects/Default/one.jpg")} />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img src={require("../Assets/Projects/Default/two.jpg")} />
+                                                <img alt="Naveenkumar M" src={require("../Assets/Projects/Default/two.jpg")} />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img src={require("../Assets/Projects/Default/three.jpg")} />
+                                                <img alt="Naveenkumar M" src={require("../Assets/Projects/Default/three.jpg")} />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img src={require("../Assets/Projects/Default/four.jpg")} />
+                                                <img alt="Naveenkumar M" src={require("../Assets/Projects/Default/four.jpg")} />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img src={require("../Assets/Projects/Default/five.jpg")} />
+                                                <img alt="Naveenkumar M" src={require("../Assets/Projects/Default/five.jpg")} />
                                             </SwiperSlide>
 
                                         </Swiper>

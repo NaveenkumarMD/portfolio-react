@@ -15,7 +15,7 @@ function Resume() {
             <Navbar />
             <a download ref={downloadlinkref} href={resumepdf} className="download-link">Downoad</a>
             <div className='resume-container'>
-                <img src={resume} />
+                <img src={resume} alt="Naveenkumar M" />
                 <div className='download' onClick={download}>
                     pdf
                     <FiDownload size={16} color="white" />

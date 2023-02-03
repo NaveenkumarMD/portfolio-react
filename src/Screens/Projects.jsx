@@ -7,6 +7,8 @@ import Projectview from '../Components/Projectview'
 import '../Styles/Blogs.css'
 import '../Styles/Projects.css'
 import Projectdata from '../Assets/Projects/projects.json'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Projects() {
     const [selectedtag, setSelectedtag] = useState('all')
     const allref = useRef(null)
@@ -21,6 +23,7 @@ function Projects() {
         modulesref.current.style.backgroundColor = ""
     }
     useEffect(() => {
+        AOS.init()
         clearselectedlinkstyles()
         if (selectedtag === "all") {
             allref.current.style.backgroundColor = "var(--bg-black1)"
@@ -49,9 +52,9 @@ function Projects() {
             <Navbar />
             <Projectview isopen={isProjectView} setisopen={setIsProjectView}  />
             <div className='blogs-container'>
-                <div className='title-blog text-white'>projects</div>
+                <div className='title-blog text-white' data-aos="fade-down">projects</div>
                 <div className='blogs-content'>
-                    <div className="blogs-menu">
+                    <div className="blogs-menu" data-aos="fade-right">
                         <div ref={allref} onClick={() => setSelectedtag("all")}>all</div>
                         <div ref={websiteref} onClick={() => setSelectedtag("website")}>websites</div>
                         <div ref={appsref} onClick={() => setSelectedtag("app")}>apps</div>
