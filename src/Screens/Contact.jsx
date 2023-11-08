@@ -9,6 +9,7 @@ import {  db } from '../App'
 import { collection,addDoc } from 'firebase/firestore'
 import Mymodal from '../Components/Mymodal'
 import {  Bars } from 'react-loader-spinner'
+import sendMail from '../Functions/mailer';
 const emailRegex = RegExp(
     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 );
@@ -107,6 +108,7 @@ function Contact() {
                     message: "",
                 })
                 setmodalisopen(true)
+                sendMail(docdata.name,docdata.message,docdata.email)
                 setsubmitloading(false)
             }
             catch (err) {
@@ -288,7 +290,7 @@ const Likedtag = ({ title, likedarr, changelikedarr }) => {
     const contentref = useRef(null)
     useEffect(() => {
         if (isLiked) {
-            contentref.current.style.backgroundColor = 'var(--fg-green)'
+            contentref.current.style.backgroundColor = '#27C498a3'
         }
         else {
             contentref.current.style.backgroundColor = 'var(--bg-black1)'

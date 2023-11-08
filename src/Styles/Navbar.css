@@ -79,6 +79,11 @@
     color: var(--fg-gray);
 
 }
+.footer-fixed{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+}
 
 .name-link{
     color: var(--fg-green);

@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import resume from '../Assets/resume.svg'
-import resumepdf from '../Assets/resume.pdf'
+import resumepdf from '../Assets/Naveenkumar_M Resume.pdf'
 import '../Styles/Resume.css'
 import { FiDownload } from "react-icons/fi";
 function Resume() {

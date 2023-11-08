@@ -9,7 +9,7 @@ import '../Styles/Projects.css'
 import Projectdata from '../Assets/Projects/projects.json'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-function Projects() {
+function Projects({bodyRef}) {
     const [selectedtag, setSelectedtag] = useState('all')
     const allref = useRef(null)
     const websiteref = useRef(null)

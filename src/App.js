@@ -8,8 +8,9 @@ import Home from './Screens/Home'
 import Projects from "./Screens/Projects";
 import Resume from "./Screens/Resume";
 import { initializeApp } from "firebase/app";
-import { getFirestore } from 'firebase/firestore'
+import { getFirestore ,addDoc,collection} from 'firebase/firestore'
 import AnimatedCursor from 'react-animated-cursor'
+import { useEffect, useRef } from "react";
 const firebaseConfig = {
   apiKey: "AIzaSyDjSnxR7Fs31YaXpQcalFi-ybzDBgN8Rds",
   authDomain: "portfolio-4fdb4.firebaseapp.com",
@@ -24,7 +25,22 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+const countUser = async () => {
+    let token=localStorage.getItem("token")
+    if(!token){
+      localStorage.setItem("token","token")
+      try {
+        await addDoc(collection(db, "count"),{count:1} )
+      } catch (error) {
+        console.log(error)
+      }
+
+    }
+}
+countUser()
+
 function App() {
+  const bodyRef = useRef()
   return (
     <BrowserRouter>
       <AnimatedCursor
@@ -48,15 +64,20 @@ function App() {
           '.link'
         ]}
       />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/blogs" exact element={<Blogs />} />
-        <Route path="/projects" exact element={<Projects />} />
-        <Route path="/contact" exact element={<Contact />} />
-        <Route path="/about" exact element={<About />} />
-        <Route path="/resume" exact element={<Resume />} />
-        <Route path="/blogs/:id/:name" element={<Blogspage />} />
-      </Routes>
+      <div ref={bodyRef} className="home-container">
+        <Routes>
+
+          <Route path="/" exact element={<Home bodyRef={bodyRef} />} />
+          <Route path="/blogs" exact element={<Blogs bodyRef={bodyRef} />} />
+          <Route path="/projects" exact element={<Projects bodyRef={bodyRef} />} />
+          <Route path="/contact" exact element={<Contact bodyRef={bodyRef} />} />
+          <Route path="/about" exact element={<About bodyRef={bodyRef} />} />
+          <Route path="/resume" exact element={<Resume bodyRef={bodyRef} />} />
+          <Route path="/blogs/:id/:name" element={<Blogspage bodyRef={bodyRef} />} />
+
+
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }

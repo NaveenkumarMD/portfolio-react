@@ -5,7 +5,7 @@ import Blogsdata from '../Assets/Blogs/blogsdata.json'
 import { useParams } from 'react-router-dom'
 import MarkDown from 'markdown-to-jsx'
 import '../Styles/Blogs.css'
-function Blogspage() {
+function Blogspage({bodyRef}) {
     const [blogs, setBlogs] = useState([])
     const [blogdata, setBlogdata] = useState([])
     const [blogcontent, setBlogcontent] = useState('')
@@ -21,7 +21,6 @@ function Blogspage() {
         })
     }
     useEffect(() => {
-        console.log(Blogsdata)
         setBlogs(Blogsdata.blogsdata)
         setBlogdata(Blogsdata.blogsdata.find(blog => blog.id === blogid))
         fetchblog(blogid)

@@ -15,26 +15,26 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Typography from '@mui/material/Typography';
 function About() {
-    useEffect(()=>{
+    useEffect(() => {
         AOS.init()
-    },[])
+    }, [])
     return (
         <div >
             <Navbar />
 
             <div className='a-content1'>
                 <div className='image-container'>
-                    <img alt="Naveenkumar M" src={require("../Assets/pic.jpg")}  />
+                    <img alt="Naveenkumar M" src={require("../Assets/pic.jpg")} />
                 </div>
                 <div className='a-content'>
                     <div className='text5'>
-                        developer,designer
+                    Experienced React Developer | Frontend Engineer 
                     </div>
-                    <div className="text5">problem solver</div>
+                    {/* <div className="text5">problem solver</div> */}
                     <div className='text6'>
-                        Still I can remember the days that I was teaching <span className='highlight'>Python</span> to myself like a Kindergarten teacher. I was very much interested doing things at very less amount of human efforts.I was making programs to solve my complex mathematical problems. I was 17 and had was new into <span className='hightlight'>programming.</span> I was a great challenge for me to understand the programming concepts and to code efficiently . While <span className='highlight'>java,C,C++ </span>were my college commpanions.
 
-                        Then I made my way towards web development with <span className="highlight">HTML ,CSS ,javascript and PHP </span> .That was very hard for me until I had a look into <span className="highlight">react and node js .</span>That appeared to be a boon and started working with it and the path continues. I have been exploring all the hooks and corners of javascript .I have explored from <span className="highlight">Electron</span> for dektop applications to <span className="highlight">React native</span>  for mobile applications.At times I also work with <span className="highlight">Python</span>  to create some awesome codes to automate things to play around it.
+
+I am a dedicated React Developer with a strong passion for creating intuitive and engaging user interfaces. With a solid background in frontend development and expertise in React, I strive to deliver high-quality code and exceptional user experiences. I have a proven track record of developing reusable and efficient components, optimizing data flow, and collaborating effectively with cross-functional teams. I am constantly staying updated with the latest web technologies and trends to ensure the best practices in my work. If you are seeking a skilled React Developer who is committed to delivering impactful solutions, let's connect and explore opportunities!
 
                     </div>
                 </div>
@@ -85,19 +85,19 @@ function About() {
                         <TimelineSeparator>
                             <TimelineConnector data-aos="fade-right" sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot sx={{
-                                bgcolor:"var(--fg-green)",
-                                width:"10px",
-                                height:"10px"
+                                bgcolor: "var(--fg-green)",
+                                width: "10px",
+                                height: "10px"
                             }}
                             >
-                               
+
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent
-                                                    
-                                                    data-aos="fade-right"
-                        sx={{ py: "50px", px: 2, fw: "900" }}>
+
+                            data-aos="fade-right"
+                            sx={{ py: "50px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 HIGH SCHOOL
                             </Typography>
@@ -107,14 +107,14 @@ function About() {
                     </TimelineItem>
 
                     <TimelineItem>
-                    <TimelineOppositeContent
+                        <TimelineOppositeContent
                             sx={{ m: "auto 0" }}
                             align="right"
                             variant="body2"
                             color="gray"
                             className='event-date'
                             data-aos="fade-right"
-                            
+
                         >
 
                             <Typography className="text9">Paramveer matric Higher Secondary school
@@ -125,11 +125,11 @@ function About() {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector
-                            data-aos="fade-left" sx={{ bgcolor: "var(--fg-green)" }}  />
+                                data-aos="fade-left" sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot sx={{
-                                bgcolor:"var(--fg-gray)",
-                                width:"10px",
-                                height:"10px"
+                                bgcolor: "var(--fg-gray)",
+                                width: "10px",
+                                height: "10px"
                             }}>
                             </TimelineDot>
                             <TimelineConnector />
@@ -143,7 +143,7 @@ function About() {
                         </TimelineContent>
                     </TimelineItem>
 
-        
+
                     <TimelineItem>
                         <TimelineOppositeContent
                             sx={{ m: "auto 0" }}
@@ -162,22 +162,22 @@ function About() {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector
-                            data-aos="fade-right"
-                            sx={{ bgcolor: "var(--fg-green)" }} />
+                                data-aos="fade-right"
+                                sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot
-sx={{
-    bgcolor:"var(--fg-green)",
-    width:"10px",
-    height:"10px"
-}}
+                                sx={{
+                                    bgcolor: "var(--fg-green)",
+                                    width: "10px",
+                                    height: "10px"
+                                }}
                             >
 
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent
-                        data-aos="fade-right"
-                        sx={{ py: "40px", px: 2, fw: "900" }}>
+                            data-aos="fade-right"
+                            sx={{ py: "40px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 UNDER GRADUATE
                             </Typography>
@@ -187,7 +187,7 @@ sx={{
                     </TimelineItem>
 
                     <TimelineItem>
-                    <TimelineOppositeContent
+                        <TimelineOppositeContent
                             sx={{ m: "auto 0" }}
                             align="right"
                             variant="body2"
@@ -199,27 +199,27 @@ sx={{
                             <Typography className="text9">Koyo software Solutions
 
                             </Typography>
-                         
+
                             <Typography className='text9'>
                                 Remote
                             </Typography>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector
-                            data-aos="fade-left"
-                            sx={{ bgcolor: "var(--fg-green)" }} />
+                                data-aos="fade-left"
+                                sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot sx={{
-                                bgcolor:"var(--fg-gray)",
-                                width:"10px",
-                                height:"10px"
+                                bgcolor: "var(--fg-gray)",
+                                width: "10px",
+                                height: "10px"
 
                             }}>
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent
-                        data-aos="fade-left"
-                        sx={{ py: "40px", px: 2, fw: "900" }}>
+                            data-aos="fade-left"
+                            sx={{ py: "40px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 INTERN
                             </Typography>
@@ -229,7 +229,7 @@ sx={{
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent
-                        data-aos="fade-right"
+                            data-aos="fade-right"
                             sx={{ m: "auto 0" }}
                             align="right"
                             variant="body2"
@@ -248,22 +248,22 @@ sx={{
                         </TimelineOppositeContent>
                         <TimelineSeparator >
                             <TimelineConnector
-                            data-aos="fade-right"
-                            sx={{ bgcolor: "var(--fg-green)" }} />
+                                data-aos="fade-right"
+                                sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot
-sx={{
-    bgcolor:"var(--fg-green)",
-    width:"10px",
-    height:"10px"
-}}
+                                sx={{
+                                    bgcolor: "var(--fg-green)",
+                                    width: "10px",
+                                    height: "10px"
+                                }}
                             >
 
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent
-                        data-aos="fade-right"
-                        sx={{ py: "40px", px: 2, fw: "900" }}>
+                            data-aos="fade-right"
+                            sx={{ py: "40px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 INTERN
                             </Typography>
@@ -272,7 +272,7 @@ sx={{
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
-                    <TimelineOppositeContent
+                        <TimelineOppositeContent
                             sx={{ m: "auto 0" }}
                             align="right"
                             variant="body2"
@@ -291,20 +291,20 @@ sx={{
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector
-                            data-aos="fade-left"
-                            sx={{ bgcolor: "var(--fg-green)" }} />
+                                data-aos="fade-left"
+                                sx={{ bgcolor: "var(--fg-green)" }} />
                             <TimelineDot sx={{
-                                bgcolor:"var(--fg-gray)",
-                                width:"10px",
-                                height:"10px"
+                                bgcolor: "var(--fg-gray)",
+                                width: "10px",
+                                height: "10px"
 
                             }}>
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent
-                        data-aos="fade-left"
-                        sx={{ py: "40px", px: 2, fw: "900" }}>
+                            data-aos="fade-left"
+                            sx={{ py: "40px", px: 2, fw: "900" }}>
                             <Typography className="event_name" component="span">
                                 INTERN
                             </Typography>
@@ -314,7 +314,7 @@ sx={{
                     </TimelineItem>
 
 
-                
+
                 </Timeline>
             </div>
             <Footer />

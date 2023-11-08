@@ -6,16 +6,28 @@ import { BsArrowUpRight, BsMedium } from "react-icons/bs";
 import { MdWorkOutline } from "react-icons/md";
 import {RiWhatsappFill} from 'react-icons/ri'
 import { FaLinkedinIn } from "react-icons/fa";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-function Home() {
+import { useRef } from 'react';
+import Footer from '../Components/Footer';
+
+function Home({bodyRef}) {
     const navigate=useNavigate()
+    const homeContainerref=useRef()
+    const location =useLocation()
     useEffect(()=>{
         AOS.init()
     },[])
+    useEffect(()=>{
+        let bodyref=bodyRef.current
+        bodyref.style.backgroundImage=`url(${require(`../Assets/BG/bg0.jpg`)})`
+        return ()=>{
+            bodyref.style.backgroundImage="none"
+        }
+    },[bodyRef])
     return (
-        <div className='home-container'>
+        <div className='home-container' ref={homeContainerref}>
             <Navbar />
             <div className='home-center' data-aos="fade-right" aos-duration="1000p">
                 <div className='text-green text1' >Hey dude! ✌️</div>
@@ -50,7 +62,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer position="fixed" />
         </div>
     )
 }
