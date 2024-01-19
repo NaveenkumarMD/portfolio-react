@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
 import "../Styles/About.css";
 import GitHubCalendar from "react-github-calendar";
 import Timeline from "@mui/lab/Timeline";
@@ -19,11 +17,9 @@ function About() {
 	}, []);
 	return (
 		<div>
-			{/* <Navbar /> */}
-
 			<div className="a-content1">
-				<div className="image-container">
-					<img alt="Naveenkumar M" src={require("../Assets/pic.jpg")} />
+				<div className=" prof">
+					<img alt="Naveenkumar M" src={require("../Assets/prof.jpg")} />
 				</div>
 				<div className="a-content">
 					<div className="text5">
@@ -48,7 +44,7 @@ function About() {
 
 			<div className="quote-container">
 				<div className="text">
-          &quot;Courage isn&apost having the strength to go on - it is going on
+          &quot;Courage isn&apos;t having the strength to go on - it is going on
           when you don&apos;t have strength&quot;
 				</div>
 				<div className="author">- Napolen - The Greatest Warrior</div>

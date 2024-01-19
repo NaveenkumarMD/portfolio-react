@@ -54,6 +54,7 @@ function App() {
 			<Home/>
 			<About/>
 			<Blogs/>
+			<Projects/>
 			<Resume/>
 			<Contact/>
 			<Footer/>

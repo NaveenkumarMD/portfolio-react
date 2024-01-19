@@ -1,7 +1,7 @@
 .blogs-container{
     max-width: 1200px;
     margin: 30px auto;
-
+    margin-top: 10%;
 }
 .blogs-flex{
     display: flex;

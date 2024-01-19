@@ -12,8 +12,6 @@ function ButtonFilled({ text, clickHandler, children }) {
 				</div>
          
 			</div>
-            
-
 		</div>
 	);
 }

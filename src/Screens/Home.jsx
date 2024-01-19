@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { ButtonBordered, ButtonFilled } from "../Components/Button";
-import Navbar from "../Components/Navbar";
 import "../Styles/Home.css";
+import { MdCloudDownload } from "react-icons/md";
 import { BsArrowUpRight, BsMedium } from "react-icons/bs";
 import { MdWorkOutline } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
@@ -11,6 +11,7 @@ import AOS from "aos";
 import HomePageSVG from "../Assets/homePage.svg";
 import "aos/dist/aos.css";
 import { useRef } from "react";
+import { Download } from "@mui/icons-material";
 
 function Home() {
 	const navigate = useNavigate();
@@ -31,10 +32,10 @@ function Home() {
 				</div>
 				<div className="home-page-btns">
 					<ButtonFilled
-						text="Lets talk"
+						text="Reume"
 						clickHandler={() => navigate("/contact")}
 					>
-						<BsArrowUpRight color="white" size={15} />
+						<MdCloudDownload color="white" size={15} />
 					</ButtonFilled>
 					<ButtonBordered
 						text="Projects"
@@ -44,7 +45,7 @@ function Home() {
 					</ButtonBordered>
 				</div>
 				<div className="home-social-icons">
-					<div className="text" style={{ fontWeight: 300 }}>
+					<div className="text" style={{ fontWeight: 500 }}>
             Check out my
 					</div>
 					<div className="social-links">
