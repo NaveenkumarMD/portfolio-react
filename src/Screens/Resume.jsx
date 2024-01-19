@@ -16,7 +16,7 @@ function Resume() {
 	};
 	return (
 		<div>
-			<Navbar />
+			{/* <Navbar /> */}
 			<a download ref={downloadlinkref} href={resumepdf} className="download-link">Downoad</a>
 			<div className='resume-container'>
 				<div>
@@ -33,7 +33,7 @@ function Resume() {
 				<div onClick={download}> <FiDownload size={16} color="white"  /> Download</div>
 
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

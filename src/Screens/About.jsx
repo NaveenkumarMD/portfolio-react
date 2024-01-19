@@ -19,7 +19,7 @@ function About() {
 	}, []);
 	return (
 		<div>
-			<Navbar />
+			{/* <Navbar /> */}
 
 			<div className="a-content1">
 				<div className="image-container">
@@ -316,7 +316,7 @@ function About() {
 					</TimelineItem>
 				</Timeline>
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

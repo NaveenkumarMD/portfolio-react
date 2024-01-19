@@ -28,7 +28,7 @@ function Blogspage() {
 	}, []);
 	return (
 		<div>
-			<Navbar />
+			{/* <Navbar /> */}
 			<div className="md-content">
 				<MarkDown
 					options={{
@@ -70,7 +70,7 @@ function Blogspage() {
 					{blogcontent}
 				</MarkDown>
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

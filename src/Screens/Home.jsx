@@ -11,6 +11,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useRef } from "react";
 import Footer from "../Components/Footer";
+import About from "./About";
+import Blogs from "./Blogs";
+import Projects from "./Projects";
+import Resume from "./Resume";
+import Contact from "./Contact";
 
 function Home({ bodyRef }) {
 	const navigate = useNavigate();
@@ -85,7 +90,12 @@ function Home({ bodyRef }) {
 					</div>
 				</div>
 			</div>
-			<Footer position="fixed" />
+			<About/>
+			<Blogs/>
+			<Projects/>
+			<Resume/>
+			<Contact/>
+			<Footer/>
 		</div>
 	);
 }

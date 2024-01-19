@@ -44,7 +44,7 @@ function Projects() {
 	//   };
 	return (
 		<div className="blogs">
-			<Navbar />
+			{/* <Navbar /> */}
 			<Projectview isopen={isProjectView} setisopen={setIsProjectView} />
 			<div className="blogs-container">
 				<div className="title-blog text-white" data-aos="fade-down">
@@ -74,7 +74,7 @@ function Projects() {
 					</div>
 				</div>
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

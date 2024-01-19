@@ -50,7 +50,7 @@ function Blogs({bodyRef}) {
 	}, [selectedtag]);
 	return (
 		<div className='blogs'>
-			<Navbar />
+			{/* <Navbar /> */}
 			<div className='blogs-container'>
 				<div className='title-blog text-white' data-aos="fade-down">blogs</div>
 				<div className='blogs-content'>

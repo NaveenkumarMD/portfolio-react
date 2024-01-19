@@ -155,7 +155,7 @@ function Contact() {
 
 	return (
 		<div ref={contactpageref}>
-			<Navbar />
+			{/* <Navbar /> */}
 			<Mymodal open={modalisopen} setisopen={setmodalisopen} />
 			<div className="loader"></div>
 
@@ -281,7 +281,7 @@ function Contact() {
 					</div>
 				</div>
 			</div>
-			<div className="c-submit-bar">
+			{/* <div className="c-submit-bar">
 				<div></div>
 				{submitloading ? (
 					<div className="bottom-loading">
@@ -297,7 +297,7 @@ function Contact() {
             submit
 					</div>
 				)}
-			</div>
+			</div> */}
 		</div>
 	);
 }

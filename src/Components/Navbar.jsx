@@ -6,7 +6,6 @@ function Navbar() {
 	const [screenwidth, setscreenwidth] = useState(window.innerWidth);
 	useEffect(() => {
 		window.addEventListener("resize", () => {
-			console.log(window.screen.width);
 			setscreenwidth(window.screen.width);
 		});
 	}, []);

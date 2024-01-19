@@ -79,12 +79,13 @@ const Navbarmain = () => {
 					<div ref={homelinkref} onClick={() => navigate("/")}>
             Home
 					</div>
-					<div ref={bloglinkref} onClick={() => navigate("/blogs")}>
-            Blogs
-					</div>
 					<div ref={aboutlinkref} onClick={() => navigate("/about")}>
             About
 					</div>
+					<div ref={bloglinkref} onClick={() => navigate("/blogs")}>
+            Blogs
+					</div>
+
 					<div ref={projectlinkref} onClick={() => navigate("/projects")}>
             Projects
 					</div>
