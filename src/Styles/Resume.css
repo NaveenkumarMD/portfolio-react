@@ -10,6 +10,14 @@
 .resume-container>img{
     width: 100%;
 }
+.react-pdf__Page{
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+}
+.react-pdf__Page__textContent{
+    display: none;
+}
 .download{
     color: white;
     position: absolute;

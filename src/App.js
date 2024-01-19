@@ -21,6 +21,12 @@ const firebaseConfig = {
 	appId: "1:933385500628:web:13005e505cf9d9dbff4841",
 	measurementId: "G-8EP1DE2QNM",
 };
+import { pdfjs } from "react-pdf";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+	"pdfjs-dist/build/pdf.worker.min.js",
+	import.meta.url,
+).toString();
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);

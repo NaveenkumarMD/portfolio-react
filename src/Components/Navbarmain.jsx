@@ -39,13 +39,7 @@ const Navbarmain = () => {
 	}, []);
 	useEffect(() => {
 		var logooffset = navlogocontainerref.current.getBoundingClientRect();
-		console.log(
-			logooffset.top,
-			logooffset.bottom,
-			logooffset.right,
-			logooffset.left
-		);
-		console.log(logooffset);
+
 		const handlemousemove = (e) => {
 			if (e.pageX < 125 && e.pageY < 90) {
 				navlogocontainerref.current.style.height = "0px";

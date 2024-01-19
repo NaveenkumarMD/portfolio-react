@@ -18,13 +18,13 @@ function Home({ bodyRef }) {
 	useEffect(() => {
 		AOS.init();
 	}, []);
-	useEffect(() => {
-		let bodyref = bodyRef.current;
-		bodyref.style.backgroundImage = `url(${import("../Assets/BG/bg0.jpg")})`;
-		return () => {
-			bodyref.style.backgroundImage = "none";
-		};
-	}, [bodyRef]);
+	// useEffect(() => {
+	// 	let bodyref = bodyRef.current;
+	// 	bodyref.style.backgroundImage = `url(${import("../Assets/BG/bg0.jpg")})`;
+	// 	return () => {
+	// 		bodyref.style.backgroundImage = "none";
+	// 	};
+	// }, [bodyRef]);
 	return (
 		<div className="home-container" ref={homeContainerref}>
 			<Navbar />
