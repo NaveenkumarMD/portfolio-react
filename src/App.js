@@ -22,6 +22,8 @@ const firebaseConfig = {
 	measurementId: "G-8EP1DE2QNM",
 };
 import { pdfjs } from "react-pdf";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 	"pdfjs-dist/build/pdf.worker.min.js",
@@ -48,51 +50,14 @@ function App() {
 	const bodyRef = useRef();
 	return (
 		<BrowserRouter>
-			<AnimatedCursor
-				innerSize={13}
-				outerSize={10}
-				color="29,196,152"
-				outerAlpha={0.2}
-				innerScale={0.7}
-				outerScale={5}
-				clickables={[
-					"a",
-					"input[type=\"text\"]",
-					"input[type=\"email\"]",
-					"input[type=\"number\"]",
-					"input[type=\"submit\"]",
-					"input[type=\"image\"]",
-					"label[for]",
-					"select",
-					"textarea",
-					"button",
-					".link",
-				]}
-			/>
-			<div ref={bodyRef} className="home-container">
-				<Routes>
-					<Route path="/" exact element={<Home bodyRef={bodyRef} />} />
-					<Route path="/blogs" exact element={<Blogs bodyRef={bodyRef} />} />
-					<Route
-						path="/projects"
-						exact
-						element={<Projects bodyRef={bodyRef} />}
-					/>
-					<Route
-						path="/contact"
-						exact
-						element={<Contact bodyRef={bodyRef} />}
-					/>
-					<Route path="/about" exact element={<About bodyRef={bodyRef} />} />
-					<Route path="/resume" exact element={<Resume bodyRef={bodyRef} />} />
-					<Route
-						path="/blogs/:id/:name"
-						element={<Blogspage bodyRef={bodyRef} />}
-					/>
-				</Routes>
-			</div>
-		</BrowserRouter>
-	);
+			<Navbar/>
+			<Home/>
+			<About/>
+			<Blogs/>
+			<Resume/>
+			<Contact/>
+			<Footer/>
+		</BrowserRouter>	);
 }
 
 export default App;

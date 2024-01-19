@@ -67,8 +67,8 @@ body,html{
   border-bottom: 1px dotted black;
 }
 .tooltip:hover{
-  transform: scale(130%);
-  transition: 0.2s;
+  transform: scale(90%);
+  transition: 0.1s;
 }
 
 .tooltip .tooltiptext {
