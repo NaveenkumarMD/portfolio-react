@@ -224,7 +224,7 @@ function Contact() {
 					</div>
 					<div className="c-main-2">
 						<div className="c-text2">
-              Ask the question and I&aposll answer it
+              Ask the question and I&apos;ll answer it
 						</div>
 						<label className="textarea-label">
               what do you think about me?

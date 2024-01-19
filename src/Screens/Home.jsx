@@ -31,7 +31,7 @@ function Home({ bodyRef }) {
 			<div className="home-center" data-aos="fade-right" aos-duration="1000p">
 				<div className="text-green text1">Hey dude! ✌️</div>
 				<div className="text-white text2" style={{ marginTop: "6px" }}>
-          I&aposm Naveenkumar M
+          I&apos;m Naveenkumar M
 				</div>
 				<div className="text-gray text4" style={{ marginTop: "15px" }}>
           Full stack developer | Blogger | Tech enthusiast

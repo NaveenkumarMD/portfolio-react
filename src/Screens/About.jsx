@@ -40,7 +40,7 @@ function About() {
             cross-functional teams. I am constantly staying updated with the
             latest web technologies and trends to ensure the best practices in
             my work. If you are seeking a skilled React Developer who is
-            committed to delivering impactful solutions, let&aposs connect and
+            committed to delivering impactful solutions, let&apos;s connect and
             explore opportunities!
 					</div>
 				</div>
@@ -48,8 +48,8 @@ function About() {
 
 			<div className="quote-container">
 				<div className="text">
-          &quotCourage isn&apost having the strength to go on - it is going on
-          when you don&apost have strength&quot
+          &quot;Courage isn&apost having the strength to go on - it is going on
+          when you don&apos;t have strength&quot;
 				</div>
 				<div className="author">- Napolen - The Greatest Warrior</div>
 			</div>
