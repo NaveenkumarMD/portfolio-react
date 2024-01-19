@@ -17,11 +17,11 @@ function About() {
 	}, []);
 	return (
 		<div>
-			<div className="a-content1">
-				<div className=" prof">
+			<div className="a-content1" >
+				<div className=" prof" data-aos="fade-right" aos-duration="1000">
 					<img alt="Naveenkumar M" src={require("../Assets/prof.jpg")} />
 				</div>
-				<div className="a-content">
+				<div className="a-content" data-aos="fade-left" aos-duration="1000">
 					<div className="text5">
             Experienced React Developer | Frontend Engineer
 					</div>
@@ -42,7 +42,7 @@ function About() {
 				</div>
 			</div>
 
-			<div className="quote-container">
+			<div className="quote-container" data-aos="fade-up" aos-duration="1000">
 				<div className="text">
           &quot;Courage isn&apos;t having the strength to go on - it is going on
           when you don&apos;t have strength&quot;

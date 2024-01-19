@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useRef } from "react";
 import { ButtonBordered, ButtonFilled } from "../Components/Button";
 import "../Styles/Home.css";
 import { MdCloudDownload } from "react-icons/md";
@@ -10,19 +10,20 @@ import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import HomePageSVG from "../Assets/homePage.svg";
 import "aos/dist/aos.css";
-import { useRef } from "react";
-import { Download } from "@mui/icons-material";
-
+import resumepdf from "../Assets/M_Naveenkumar_Resume.pdf";
 function Home() {
 	const navigate = useNavigate();
+	const downloadlinkref=useRef();
 	const homeContainerref = useRef();
 	useEffect(() => {
 		AOS.init();
 	}, []);
 	return (
 		<div className="home-container" ref={homeContainerref}>
-
-			<div className="home-center" data-aos="fade-right" aos-duration="1000p">
+			<div style={{display:"none"}}>	
+				<a href={resumepdf} ref={downloadlinkref}></a>
+			</div>
+			<div className="home-center" data-aos="fade-right" aos-duration="1000">
 				<div className="text-green text1">Hey dude! ✌️</div>
 				<div className="text-white text2" style={{ marginTop: "6px" }}>
           I&apos;m Naveenkumar M
@@ -33,7 +34,7 @@ function Home() {
 				<div className="home-page-btns">
 					<ButtonFilled
 						text="Reume"
-						clickHandler={() => navigate("/contact")}
+						clickHandler={() => downloadlinkref.current.click()}
 					>
 						<MdCloudDownload color="white" size={15} />
 					</ButtonFilled>
@@ -79,7 +80,7 @@ function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="homepage-svg">
+			<div className="homepage-svg" data-aos="fade-left" aos-duration="1000">
 				<img src={HomePageSVG}/>
 			</div>
 

@@ -33,19 +33,6 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-const countUser = async () => {
-	let token = localStorage.getItem("token");
-	if (!token) {
-		localStorage.setItem("token", "token");
-		try {
-			await addDoc(collection(db, "count"), { count: 1 });
-		} catch (error) {
-			console.log(error);
-		}
-	}
-};
-countUser();
-
 function App() {
 	const bodyRef = useRef();
 	return (
@@ -55,7 +42,6 @@ function App() {
 			<About/>
 			<Blogs/>
 			<Projects/>
-			<Resume/>
 			<Contact/>
 			<Footer/>
 		</BrowserRouter>	);

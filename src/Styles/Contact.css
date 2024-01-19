@@ -53,8 +53,9 @@
 }
 .question2{
     margin-top: 40px;
-    color: white;
+    color: rgb(199, 196, 196);
     font-weight: 400;
+    font-size: 14px;
 
 }
 .interest-content{
@@ -129,8 +130,9 @@
     min-width: 400px;
 }
 .textarea-label{
-    color: rgb(199, 195, 195);
+    color: rgb(199, 196, 196);
     font-weight: 400;
+    font-size: 14px;
 
 }
 .textarea:focus{
@@ -152,6 +154,20 @@
 .bottom-loading{
     margin-right: 50px;
 }
+.contact-page{
+    margin-top:  10%;
+    margin-bottom: 10%;
+}
+.btns-container{
+    display: flex;
+    gap: 20px;
+    float:right;
+    margin-top: 40px;
+}
+.btns-container .btn-content{
+    gap: 0px;
+}
+
 @media only screen and (max-width: 850px){
     .contact-container {
         margin: 40px 25px;

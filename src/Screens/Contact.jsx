@@ -1,15 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "../Components/Navbar";
 import "../Styles/Contact.css";
 import { FiCircle } from "react-icons/fi";
-import { RiWhatsappFill } from "react-icons/ri";
-import { FaLinkedinIn } from "react-icons/fa";
-import { BsInstagram, BsMedium } from "react-icons/bs";
 import { db } from "../App";
 import { collection, addDoc } from "firebase/firestore";
 import Mymodal from "../Components/Mymodal";
-import { Bars } from "react-loader-spinner";
+import "aos/dist/aos.css";
 import sendMail from "../Functions/mailer";
+import { ButtonBordered, ButtonFilled } from "../Components/Button";
+import Aos from "aos";
 const emailRegex = RegExp(
 	/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 );
@@ -60,28 +58,25 @@ function Contact() {
 		message: "",
 	});
 	useEffect(() => {
-		nameinputref.current.focus();
+		// nameinputref.current.focus();
+		Aos.init();
 	}, []);
 
 	const handleinputchange = (e) => {
-		if (e.target.name === "name") {
-			setInputcontent({
-				...inputcontent,
-				name: e.target.value,
-			});
-		} else if (e.target.name === "email") {
-			setInputcontent({
-				...inputcontent,
-				email: e.target.value,
-			});
-		} else if (e.target.name === "message") {
-			setInputcontent({
-				...inputcontent,
-				message: e.target.value,
-			});
-		}
+		setInputcontent({
+			...inputcontent,
+			[e.target.name]: e.target.value,
+		});
 	};
-	const submit = async () => {
+	const handleReset=()=>{
+		setInputcontent({
+			name:"",
+			email:"",
+			message:""
+		});
+	};
+	const handleSubmit= async () => {
+		console.log(inputcontent,Likedtags);
 		setsubmitloading(true);
 		let temp = [];
 		Likedtags.map((tag) => {
@@ -154,21 +149,20 @@ function Contact() {
 	}, [inputcontent.message]);
 
 	return (
-		<div ref={contactpageref}>
+		<div ref={contactpageref} className="contact-page">
 			{/* <Navbar /> */}
 			<Mymodal open={modalisopen} setisopen={setmodalisopen} />
 			<div className="loader"></div>
-
 			<div className="contact-container">
-				<div className="c-title ">wanna tell me something...</div>
-				<div className="c-main">
+				<div className="c-title ">Tell me something</div>
+				<div className="c-main" data-aos="fade-down" aos-duration="1000">
 					<div className="c-main-1">
 						<div className="c-text1">
-              tell me about something that attracts you the most
+              Lets talk about tech and frontend development
 						</div>
-						<div className="c-input-container">
+						<div className="c-input-container" >
 							<div className="c-input">
-								<label>name</label>
+								<label>Name</label>
 								<br />
 								<input
 									ref={nameinputref}
@@ -186,7 +180,7 @@ function Contact() {
 								<div ref={namevalidref} className="validationstring"></div>
 							</div>
 							<div className="c-input">
-								<label>e-mail address</label>
+								<label>Email</label>
 								<br />
 								<input
 									ref={emailinputref}
@@ -205,7 +199,7 @@ function Contact() {
 							</div>
 						</div>
 						<div className="c-text1 question2">
-              what kind of content do you like in this website?
+              Do you like any of the below?
 						</div>
 						<div className="interest-content">
 							{Likedtags &&
@@ -224,10 +218,10 @@ function Contact() {
 					</div>
 					<div className="c-main-2">
 						<div className="c-text2">
-              Ask the question and I&apos;ll answer it
+							{/* Ask the question and I&apos;ll answer it */}
 						</div>
 						<label className="textarea-label">
-              what do you think about me?
+              Content
 						</label>
 						<br />
 						<textarea
@@ -239,65 +233,15 @@ function Contact() {
 							value={inputcontent.message}
 						></textarea>
 						<div ref={messagevalidref} className="validationstring"></div>
-						<div className="home-social-icons">
-							<div className="text5">Check out my</div>
-							<div className="social-links social-linkss">
-								<div
-									className="tooltip"
-									onClick={() =>
-										window.open(
-											"https://medium.com/@naveen9715568487",
-											"_blank"
-										)
-									}
-								>
-									<span className="tooltiptext">Medium</span>
-									<BsMedium color="var(--fg-green)" size={18} />
-								</div>
-								<div
-									className="tooltip"
-									onClick={() =>
-										window.open(
-											"https://www.linkedin.com/in/naveenkumar-m-712612187/"
-										)
-									}
-								>
-									<span className="tooltiptext">Linkedin</span>
-									<FaLinkedinIn color="var(--fg-green)" size={18} />
-								</div>
-								<div
-									className="tooltip"
-									onClick={() => window.open("https://wa.me/+918870499146")}
-								>
-									<span className="tooltiptext">Whatsapp</span>
-									<RiWhatsappFill color="var(--fg-green)" size={20} />
-								</div>
-								<div className="tooltip" onClick={() => window.open()}>
-									<span className="tooltiptext">Instagram</span>
-									<BsInstagram color="var(--fg-green)" size={18} />
-								</div>
-							</div>
+						<div className="btns-container">
+							<ButtonBordered clickHandler={() => handleReset()}>Reset</ButtonBordered>
+							<ButtonFilled clickHandler={()=>handleSubmit()}>Submit</ButtonFilled>
 						</div>
 					</div>
+
 				</div>
 			</div>
-			{/* <div className="c-submit-bar">
-				<div></div>
-				{submitloading ? (
-					<div className="bottom-loading">
-						<Bars
-							height="50"
-							width="50"
-							color="var(--fg-green)"
-							ariaLabel="loading"
-						/>
-					</div>
-				) : (
-					<div className="c-submit-button" onClick={submit}>
-            submit
-					</div>
-				)}
-			</div> */}
+
 		</div>
 	);
 }

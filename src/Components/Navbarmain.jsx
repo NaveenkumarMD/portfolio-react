@@ -6,7 +6,6 @@ import { BsFillSquareFill } from "react-icons/bs";
 import logo from "../Assets/logo.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 const Navbarmain = () => {
-	const navigate = useNavigate();
 	const location = useLocation();
 	const homelinkref = useRef(null);
 	const aboutlinkref = useRef(null);
@@ -37,6 +36,9 @@ const Navbarmain = () => {
 			bloglinkref.current.style.backgroundColor = "var(--bg-black1)";
 		}
 	}, []);
+	const navigate=path=>{
+		console.log(path);
+	};
 	useEffect(() => {
 		var logooffset = navlogocontainerref.current.getBoundingClientRect();
 
