@@ -5,7 +5,8 @@ import { ImLinkedin2 } from "react-icons/im";
 import { BsFillSquareFill } from "react-icons/bs";
 import logo from "../Assets/logo.svg";
 import { useLocation, useNavigate } from "react-router-dom";
-const Navbarmain = () => {
+const Navbarmain = (props) => {
+	const {homeRef,aboutRef,blogsRef,contactRef,projectsRef}=props;
 	const location = useLocation();
 	const homelinkref = useRef(null);
 	const aboutlinkref = useRef(null);
@@ -40,7 +41,7 @@ const Navbarmain = () => {
 		console.log(path);
 	};
 	useEffect(() => {
-		var logooffset = navlogocontainerref.current.getBoundingClientRect();
+		var logffset = navlogocontainerref.current.getBoundingClientRect();
 
 		const handlemousemove = (e) => {
 			if (e.pageX < 125 && e.pageY < 90) {
@@ -56,17 +57,7 @@ const Navbarmain = () => {
 			document.onmousemove = null;
 		};
 	}, []);
-	// useEffect(()=>{
-	//     const handlemousemove = (e) => {
-	//         if(e.pageY<90){
-	//             linksref.current.style.width="100%"
-	//         }
-	//         else{
-	//             linksref.current.style.width="80px"
-	//         }
-	//     }
-	//     document.onmousemove = handlemousemove
-	// },[])
+
 
 	return (
 		<div className="navbar">
@@ -78,23 +69,20 @@ const Navbarmain = () => {
 					</div>
 				</div>
 				<div className="nav-left-links" ref={linksref}>
-					<div ref={homelinkref} onClick={() => navigate("/")}>
+					<div ref={homelinkref} onClick={() =>homeRef.current.scrollIntoView()}>
             Home
 					</div>
-					<div ref={aboutlinkref} onClick={() => navigate("/about")}>
+					<div  onClick={() =>aboutRef.current.scrollIntoView()}>
             About
 					</div>
-					<div ref={bloglinkref} onClick={() => navigate("/blogs")}>
+					<div onClick={() => blogsRef.current.scrollIntoView()}>
             Blogs
 					</div>
 
-					<div ref={projectlinkref} onClick={() => navigate("/projects")}>
+					<div onClick={() => projectsRef.current.scrollIntoView()}>
             Projects
 					</div>
-					<div ref={resumelinkref} onClick={() => navigate("/resume")}>
-            Resume
-					</div>
-					<div ref={contactlinkref} onClick={() => navigate("/contact")}>
+					<div onClick={() => contactRef.current.scrollIntoView()}>
             Contact
 					</div>
 				</div>

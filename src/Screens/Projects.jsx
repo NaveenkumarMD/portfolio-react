@@ -48,7 +48,7 @@ function Projects() {
 			<Projectview isopen={isProjectView} setisopen={setIsProjectView} />
 			<div className="blogs-container">
 				<div className="title-blog text-white" data-aos="fade-down">
-          projects
+          Projects
 				</div>
 				<div className="blogs-content">
 					<div className="blogs-menu" data-aos="fade-right">

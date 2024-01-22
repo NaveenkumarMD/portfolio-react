@@ -59,13 +59,13 @@ function Navmobile() {
 				<div className="mob-nav-left">
 					<img src={logo} alt="Naveenkumar M" />
 				</div>
-				<div className="mob-nav-right" onClick={toggleSidebar}>
+				{/* <div className="mob-nav-right" onClick={toggleSidebar}>
 					{sidebarisopen ? (
 						<IoMdClose color="var(--fg-green)" size={28} />
 					) : (
 						<BiMenu color="var(--fg-green)" size={28} />
 					)}
-				</div>
+				</div> */}
 			</div>
 			<div className="sidebar" ref={sidebaref}>
 				<div className="logo-mob">

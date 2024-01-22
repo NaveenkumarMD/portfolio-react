@@ -154,7 +154,7 @@ function Contact() {
 			<Mymodal open={modalisopen} setisopen={setmodalisopen} />
 			<div className="loader"></div>
 			<div className="contact-container">
-				<div className="c-title ">Tell me something</div>
+				<div className="c-title ">Contact me</div>
 				<div className="c-main" data-aos="fade-down" aos-duration="1000">
 					<div className="c-main-1">
 						<div className="c-text1">

@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import Blogcontainer from "../Components/Blogcontainer";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
+
 import "../Styles/Blogs.css";
 import Blogsdata from "../Assets/Blogs/blogsdata.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
-function Blogs({bodyRef}) {
+function Blogs() {
 	const [selectedtag, setSelectedtag] = useState("all");
 	const blogcontainerref = useRef(null);
 	const allinkref = useRef(null);
@@ -24,8 +23,6 @@ function Blogs({bodyRef}) {
 	};
 	useEffect(() => {
 		AOS.init();
-
-
 	});
 	useEffect(() => {
 		console.log(Blogsdata);
@@ -52,7 +49,7 @@ function Blogs({bodyRef}) {
 		<div className='blogs'>
 			{/* <Navbar /> */}
 			<div className='blogs-container'>
-				<div className='title-blog text-white' data-aos="fade-down">blogs</div>
+				<div className='title-blog text-white' data-aos="fade-down">Blogs</div>
 				<div className='blogs-content'>
 					<div className="blogs-menu" data-aos="fade-right">
 						<div ref={allinkref} onClick={() => setSelectedtag("all")}>all</div>

@@ -34,17 +34,21 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 function App() {
-	const bodyRef = useRef();
+	const homeRef=useRef();
+	const aboutRef=useRef();
+	const projectsRef=useRef();
+	const blogsRef=useRef();
+	const contactRef=useRef();
 	return (
 		<BrowserRouter>
-			<Navbar/>
-			<Home/>
-			<About/>
-			<Blogs/>
-			<Projects/>
-			<Contact/>
+			<Navbar {...{homeRef,projectsRef,aboutRef,blogsRef,contactRef}}/>
+			<div ref={homeRef}><Home /></div>
+			<div ref={aboutRef}><About /></div>
+			<div ref={projectsRef}><Projects/></div>
+			<div ref={blogsRef}><Blogs/></div>
+			<div ref={contactRef}><Contact/></div>
 			<Footer/>
-		</BrowserRouter>	);
+		</BrowserRouter>);
 }
 
 export default App;

@@ -11,15 +11,14 @@ import AOS from "aos";
 import HomePageSVG from "../Assets/homePage.svg";
 import "aos/dist/aos.css";
 import resumepdf from "../Assets/M_Naveenkumar_Resume.pdf";
-function Home() {
+function Home({ref}) {
 	const navigate = useNavigate();
 	const downloadlinkref=useRef();
-	const homeContainerref = useRef();
 	useEffect(() => {
 		AOS.init();
 	}, []);
 	return (
-		<div className="home-container" ref={homeContainerref}>
+		<div className="home-container" ref={ref}>
 			<div style={{display:"none"}}>	
 				<a href={resumepdf} ref={downloadlinkref}></a>
 			</div>
@@ -47,7 +46,7 @@ function Home() {
 				</div>
 				<div className="home-social-icons">
 					<div className="text" style={{ fontWeight: 500 }}>
-            Check out my
+            Connect with me
 					</div>
 					<div className="social-links">
 						<div
@@ -83,6 +82,10 @@ function Home() {
 			<div className="homepage-svg" data-aos="fade-left" aos-duration="1000">
 				<img src={HomePageSVG}/>
 			</div>
+			{/* <div>
+				<AnimatedImage/>
+			</div> */}
+
 
 		</div>
 	);
