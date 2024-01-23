@@ -1,11 +1,11 @@
 {
     "contents": [
         {
-            "name": "MD meet",
-            "content": "A video meeting web app created using react and jetsi meet api",
-            "link": "https://mdmeet.web.app",
-            "github": "https://github.com/NaveenkumarMD/MD-meet",
-            "pic": "logo.svg",
+            "name": "SEVC",
+            "content":"A web application enabling users to register and access all essential information related to the electric vehicle competition.",
+            "link": "https:sevc.in",
+            "github": "https://github.com/NaveenkumarMD/sevc",
+            "pic": "../Projects/Cryptera/logo.png",
             "tags": [
                 "react",
                 "website",
@@ -64,27 +64,6 @@
             "tag":"website"
         },
         {
-            "name": "E-signer",
-            "content": "A prototype of a digital signature system",
-            "link": "",
-            "github": "https://github.com/NaveenkumarMD/Innovation-hackathon",
-            "pic": "../Projects/Cryptera/logo.png",
-            "tags": [
-                "react",
-                "website",
-                "jetsi meet",
-                "video meeting"
-            ],
-            "date": "Feb 2020",
-            "stars": "4",
-            "pics": [
-                "../",
-                "../"
-            ],
-            "likes": 0,
-            "tag":"website"
-        },
-        {
             "name": "Chrome custom home page",
             "content": "A custom landing page for chrome",
             "link": "https://github.com/NaveenkumarMD/browser-custom-pages",
@@ -105,6 +84,7 @@
             "likes": 0,
             "tag":"app"
         },
+ 
         {
             "name": "Extension handler",
             "content": "An extension for chrome to handle other extensions",
@@ -125,6 +105,27 @@
             ],
             "likes": 0,
             "tag":"app"
+        },
+        {
+            "name": "E-signer",
+            "content": "A prototype of a digital signature system",
+            "link": "",
+            "github": "https://github.com/NaveenkumarMD/Innovation-hackathon",
+            "pic": "../Projects/Cryptera/logo.png",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
         },
         {
             "name": "Instagram clone",
@@ -167,6 +168,27 @@
             ],
             "likes": 0,
             "tag":"app"
+        },
+        {
+            "name": "MD meet",
+            "content": "A video meeting web app created using react and jetsi meet api",
+            "link": "https://mdmeet.web.app",
+            "github": "https://github.com/NaveenkumarMD/MD-meet",
+            "pic": "logo.svg",
+            "tags": [
+                "react",
+                "website",
+                "jetsi meet",
+                "video meeting"
+            ],
+            "date": "Feb 2020",
+            "stars": "4",
+            "pics": [
+                "../",
+                "../"
+            ],
+            "likes": 0,
+            "tag":"website"
         },
         {
             "name": "Master methods",
