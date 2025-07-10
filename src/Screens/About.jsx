@@ -307,6 +307,45 @@ function About() {
                 INTERN
 							</Typography>
 							<Typography className="marks">Frontend developer</Typography>
+							<Typography className="year">Duration: Jan,2023 to Jun,2023</Typography>
+						</TimelineContent>
+					</TimelineItem>
+					<TimelineItem>
+						<TimelineOppositeContent
+							sx={{ m: "auto 0" }}
+							align="right"
+							variant="body2"
+							color="gray"
+							className="event-date"
+							data-aos="fade-right"
+						>
+							<Typography className="text9">
+                Striim Engineering services
+							</Typography>
+							<Typography className="text9">Chennai</Typography>
+						</TimelineOppositeContent>
+						<TimelineSeparator>
+							<TimelineConnector
+								data-aos="fade-left"
+								sx={{ bgcolor: "var(--fg-green)" }}
+							/>
+							<TimelineDot
+								sx={{
+									bgcolor: "var(--fg-gray)",
+									width: "10px",
+									height: "10px",
+								}}
+							></TimelineDot>
+							<TimelineConnector />
+						</TimelineSeparator>
+						<TimelineContent
+							data-aos="fade-left"
+							sx={{ py: "40px", px: 2, fw: "900" }}
+						>
+							<Typography className="event_name" component="span">
+                FRONTEND ENGINEER
+							</Typography>
+							{/* <Typography className="marks">Frontend developer</Typography> */}
 							<Typography className="year">Currently working</Typography>
 						</TimelineContent>
 					</TimelineItem>

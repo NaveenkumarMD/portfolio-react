@@ -32,7 +32,7 @@ function Home({ref}) {
 				</div>
 				<div className="home-page-btns">
 					<ButtonFilled
-						text="Reume"
+						text="Resume"
 						clickHandler={() => downloadlinkref.current.click()}
 					>
 						<MdCloudDownload color="white" size={15} />
